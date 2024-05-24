@@ -1,91 +1,60 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{B3E7BA35-56E9-405D-85EA-77B063254776}</ProjectGuid>
-        <OutputType>Library</OutputType>
-        <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>CustomHitSound</RootNamespace>
-        <AssemblyName>CustomHitSound</AssemblyName>
-        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-        <FileAlignment>512</FileAlignment>
-        <LangVersion>10</LangVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <ReferencePath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash</ReferencePath>
     </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
-        <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>pdbonly</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
+
     <ItemGroup>
         <Reference Include="0Harmony">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\0Harmony.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\net6\0Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="Assembly-CSharp">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\Assembly-CSharp.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppInterop.Runtime">
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="Il2Cppmscorlib">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\Il2Cppmscorlib.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Il2CppSirenix.Serialization">
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Il2CppAssemblies\Il2CppSirenix.Serialization.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="MelonLoader">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\MelonLoader.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\net6\MelonLoader.dll</HintPath>
             <Private>False</Private>
         </Reference>
-        <Reference Include="System"/>
         <Reference Include="Tomlet">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Tomlet.dll</HintPath>
-            <Private>False</Private>
-        </Reference>
-        <Reference Include="UnhollowerBaseLib">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\net6\Tomlet.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.AudioModule">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.AudioModule.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.UI">
-            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Managed\UnityEngine.UI.dll</HintPath>
+            <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Muse Dash\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Main.cs"/>
-        <Compile Include="Patch.cs"/>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include=".gitignore"/>
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
-    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-         Other similar extension points exist, see Microsoft.Common.targets.
-    <Target Name="BeforeBuild">
+
+    <Target Name="CopyMods" AfterTargets="Build">
+        <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(ReferencePath)\Mods"/>
+        <Message Text="Copied DLL -&gt; $(ReferencePath)\Mods\$(ProjectName).dll" Importance="High"/>
     </Target>
-    <Target Name="AfterBuild">
-    </Target>
-    -->
 
 </Project>

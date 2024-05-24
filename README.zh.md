@@ -3,29 +3,20 @@
 玩家可以自制音效包替换游戏内打击音效
 
 ## 如何安装
+
 安装 [Muse Dash Mod tools](https://github.com/MDModsDev/MuseDashModToolsUI/releases/latest), 跟着提示的流程安装mod。
 
 然后从 [Releases](https://github.com/MDModsDev/CustomHitSound/releases/latest)里下载BattleSfx.zip, 解压到`Muse Dash\UserData` 文件夹.
 
 最终路径应为`Muse Dash\UserData\BattleSfx`.
 
-
-
 ## 如何使用音效包
 
-在游戏的声音设置的打击音效里有对应的开关
-
-![Screenshot](Intro/Screenshot.zh.png)
-
-选择对应按钮来使用音效包
-
-
+在游戏的声音设置的打击音效里有对应的下拉框，选择音效即可
 
 ## 如何创建自己的音效包
 
-**在BattleSfx.zip里有一个默认的模板 (Celeste文件夹).**
-
-
+**在BattleSfx.zip里有默认的模板 (Celeste和Bandori).**
 
 ### 你可以替换很多种音效：
 
@@ -61,8 +52,6 @@ hitsound_014
 hitsound_015
 ```
 
-
-
 ### 对于打击音效的名字，你可以参考下面的表格：
 
 ```
@@ -79,11 +68,10 @@ sfx_ghost_gc = Groove Coaster的幽灵
 hitsound = 连打 
 ```
 
-
-
 ### 还可以替换人物受伤音效
 
 #### 玛莉嘉：
+
 ```
 VoiceMarijaHurt02
 VoiceMarijaHurt03
@@ -98,6 +86,7 @@ VoiceCatMarijaHurt
 ```
 
 #### 凛：
+
 ```
 VoiceRinHurt01
 VoiceRinHurt02
@@ -111,6 +100,7 @@ VoiceCatRinHurt
 ```
 
 #### 布若：
+
 ```
 VoiceBuroHurt01
 VoiceBuroHurt03
@@ -124,6 +114,7 @@ VoiceCatBuroHurt
 ```
 
 #### 欧拉：
+
 ```
 VoiceOlaHurt01
 VoiceOlaHurt02
@@ -133,6 +124,7 @@ VoiceOlaHurt05
 ```
 
 #### 柚梅：
+
 ```
 VoiceYumeHurt01
 VoiceYumeHurt02
@@ -144,6 +136,7 @@ VoiceYumeHurt07
 ```
 
 #### Neko：
+
 ```
 VoiceNekoHurt01
 VoiceNekoHurt02
@@ -153,6 +146,7 @@ VoiceNekoHurt05
 ```
 
 #### 博丽灵梦：
+
 ```
 VoiceReimuHurt01
 VoiceReimuHurt02
@@ -162,6 +156,7 @@ VoiceReimuHurt05
 ```
 
 #### El_Clear：
+
 ```
 VoiceClearHurt02
 VoiceClearHurt04
@@ -172,6 +167,7 @@ VoiceClearHurt10
 ```
 
 #### 雾雨魔理沙：
+
 ```
 VoiceMarisaHurt01
 VoiceMarisaHurt02
@@ -181,6 +177,7 @@ VoiceMarisaHurt05
 ```
 
 #### 阿米娅：
+
 ```
 VoiceAmiyaHurt01
 VoiceAmiyaHurt02
@@ -190,6 +187,7 @@ VoiceAmiyaHurt05
 ```
 
 #### 道士布若：
+
 ```
 char_exorcist_empty_atk
 
@@ -200,8 +198,6 @@ VoiceExorcistHurt04
 VoiceExorcistHurt05
 ```
 
-
-
 ### 命名规则
 
 **你需要把文件命名为以下的格式：**
@@ -210,19 +206,13 @@ VoiceExorcistHurt05
 
 例子：Celeste文件夹里的`sfx_forte_2_celeste.wav` （也可以命名为`sfx_forte_2_Celeste.wav`）
 
-
-
 ### Debug 模式
 
 Debug模式会在控制台输出对应音频文件的名称和所用的路径，可以用来检测是否使用了正确的音频文件
 
 打开UserData底下的Custom Hit Sound.cfg文件，路径应为`MuseDash\UserData\Custom Hit Sound.cfg`. 然后改成DebugModeEnabled = true
 
-
-
 ### 如果你没有替换对应音效游戏会使用默认音效
-
-
 
 ### 另
 

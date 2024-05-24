@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomHitSound", "CustomHitSound.csproj", "{B3E7BA35-56E9-405D-85EA-77B063254776}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomHitSound", "CustomHitSound.csproj", "{B5898A90-5AFA-4B22-A523-B3CF924A9C41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3E7BA35-56E9-405D-85EA-77B063254776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3E7BA35-56E9-405D-85EA-77B063254776}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3E7BA35-56E9-405D-85EA-77B063254776}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3E7BA35-56E9-405D-85EA-77B063254776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5898A90-5AFA-4B22-A523-B3CF924A9C41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

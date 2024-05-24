@@ -5,27 +5,20 @@ Allows you to use custom hit sounds in game.
 [中文Readme](README.zh.md)
 
 ## How to Install
+
 Install [Muse Dash Mod tools](https://github.com/MDModsDev/MuseDashModToolsUI/releases/latest), follow the instructions and install the mod.
 
 Then, download BattleSfx.zip from [Releases](https://github.com/MDModsDev/CustomHitSound/releases/latest), extract it into `Muse Dash\UserData` folder.
 
 The path should be `Muse Dash\UserData\BattleSfx`.
 
-
-
 ## How to use the Hit Sound Pack
-There should be in game toggles in the Audio Setting, under the Hit Sound Effects
 
-![Screenshot](Intro/Screenshot.png)
-
-Select the toggle to use the sound effect.
-
-
+Choose the sfx you want in the sfx dropdown.
 
 ## How to Create your own Hit Sound
+
 **There is a default template in BattleSfx.zip (The Celeste folder).**
-
-
 
 ### There are several hit sounds you can replace:
 
@@ -62,8 +55,6 @@ hitsound_014
 hitsound_015
 ```
 
-
-
 ### And for the battle sound names, you can refer to the following table:
 
 ```
@@ -80,11 +71,10 @@ sfx_ghost_gc = gc scene ghost
 hitsound = masher 
 ```
 
-
-
 ### And also the character hurt sound
 
 #### For Marija:
+
 ```
 VoiceMarijaHurt02
 VoiceMarijaHurt03
@@ -99,6 +89,7 @@ VoiceCatMarijaHurt
 ```
 
 #### For Rin:
+
 ```
 VoiceRinHurt01
 VoiceRinHurt02
@@ -112,6 +103,7 @@ VoiceCatRinHurt
 ```
 
 #### For Buro:
+
 ```
 VoiceBuroHurt01
 VoiceBuroHurt03
@@ -125,6 +117,7 @@ VoiceCatBuroHurt
 ```
 
 #### For Ola:
+
 ```
 VoiceOlaHurt01
 VoiceOlaHurt02
@@ -134,6 +127,7 @@ VoiceOlaHurt05
 ```
 
 #### For Yume:
+
 ```
 VoiceYumeHurt01
 VoiceYumeHurt02
@@ -145,6 +139,7 @@ VoiceYumeHurt07
 ```
 
 #### For Neko:
+
 ```
 VoiceNekoHurt01
 VoiceNekoHurt02
@@ -154,6 +149,7 @@ VoiceNekoHurt05
 ```
 
 #### For Reimu:
+
 ```
 VoiceReimuHurt01
 VoiceReimuHurt02
@@ -163,6 +159,7 @@ VoiceReimuHurt05
 ```
 
 #### For El_Clear:
+
 ```
 VoiceClearHurt02
 VoiceClearHurt04
@@ -173,6 +170,7 @@ VoiceClearHurt10
 ```
 
 #### For Marisa:
+
 ```
 VoiceMarisaHurt01
 VoiceMarisaHurt02
@@ -182,6 +180,7 @@ VoiceMarisaHurt05
 ```
 
 #### For Amiya:
+
 ```
 VoiceAmiyaHurt01
 VoiceAmiyaHurt02
@@ -191,6 +190,7 @@ VoiceAmiyaHurt05
 ```
 
 #### For Exorcist Buro:
+
 ```
 char_exorcist_empty_atk
 
@@ -201,8 +201,6 @@ VoiceExorcistHurt04
 VoiceExorcistHurt05
 ```
 
-
-
 ### For naming style
 
 **You should name the audio file with the following format:**
@@ -211,19 +209,13 @@ VoiceExorcistHurt05
 
 For example: `sfx_forte_2_celeste.wav` (or you can name it as `sfx_forte_2_Celeste.wav`) in Celeste folder.
 
-
-
 ### For Debug Mode
 
 Debug Mode will output the audio file key name and corresponding path to the console for people to check whether it uses the correct file.
 
 Go to the UserData folder under Muse Dash folder and open the Custom Hit Sound.cfg file. The path should be `MuseDash\UserData\Custom Hit Sound.cfg`. Then change the DebugModeEnabled = true.
 
-
-
 ### The game will use the default sound if you don't implement the sound.
-
-
 
 ### Ps
 
