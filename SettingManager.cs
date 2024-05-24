@@ -40,7 +40,7 @@ internal class Data
     [TomlPrecedingComment("Whether debug mode enabled or not")]
     internal bool DebugModeEnabled { get; set; }
 
-    [TomlPrecedingComment("Stored sfx pack names")]
+    [TomlPrecedingComment("Stored sfx pack paths")]
     internal string[] StoredSfxPacks { get; set; }
 
     public Data()

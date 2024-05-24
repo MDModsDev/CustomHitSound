@@ -107,6 +107,8 @@ internal static class BattleSfxSelectPatch
                 }
             }));
 
+            toggleComp.SetIsOnWithoutNotify(Setting.CurrentSfx == sfxPackName);
+
             __instance.m_BattleSfx.Add(toggleComp);
         }
     }
